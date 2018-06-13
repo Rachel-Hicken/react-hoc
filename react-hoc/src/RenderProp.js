@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class RenderProp extends Component {
     constructor(){
@@ -14,4 +15,8 @@ export default class RenderProp extends Component {
             </div>
         )
     }
+}
+
+RenderProp.propTypes = {
+    children: PropTypes.func.isRequired
 }
